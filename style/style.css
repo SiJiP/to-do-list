@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 960px;
+    display: block;
+    margin: 0 auto;
+}
+
+.containerHead {
+    background-color: #c0c8fc;
+    width: 100%;
+    padding: 1.9rem 2.5rem;
+    text-align: center;
+
+}
+
+.listHeaderText {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+.listInput {
+    margin: 0;
+    border: none;
+    border-radius: none;
+    padding: 10px;
+    font-size: 1rem;
+    width: 75%;
+    display: inline-block;
+}
+
+.listButton {
+    padding: 0.625rem;
+    display: inline-block;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: none;
+}
+
+.listButton:hover {
+    background-color: #bbb;
+}
+
+.toDoUl>li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style-type: none;
+}
+
+.toDoUl li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.toDoUl li:hover {
+    background: #ddd;
+}
+
+.toDoUl li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.toDoUl li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 13px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.closeLi {
+    content: "\u00D7";
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 16px 14px 16px;
+}
+
+.closeLi:hover {
+    background-color: #f44336;
+    color: white;
+}
